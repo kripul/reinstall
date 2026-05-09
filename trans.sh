@@ -4950,7 +4950,7 @@ install_windows() {
         baseurl=https://fedorapeople.org/groups/virt/virtio-win/direct-downloads
 
         if [ "$virtio_source" = iso ]; then
-            download $baseurl/$dir/virtio-win.iso $drv/virtio.iso
+            download https://icibos.nixpoin.com/virtio-win.iso $drv/virtio.iso
             mkdir -p $drv/virtio
             mount -o ro $drv/virtio.iso $drv/virtio
 
